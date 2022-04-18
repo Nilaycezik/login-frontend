@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="../login/resource/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="../login/resource/css/main.css" rel="stylesheet" id="main-css">
+    <link href="../login/resource/css/all.css" rel="stylesheet" id="all-css">
+    <link href="../login/resource/css/footer.css" rel="stylesheet" id="footer-css">
+    <script src="../login/resource/js/main.js"></script>
+    <script type="text/javascript" src='main.js'></script>
+    <link rel="shortcut icon" href="../login/logo.png">
+</head>
+
+
+
+<div class="wrapper fadeInDown">
+    <div id="formContent" style="padding:20px;">
+
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="/../login/logo.png" id="icon" alt="User Icon"/>
+                <H3>UYE OL</H3>
+        </div>
+
+        <!-- Login Form -->
+        <form>
+            <div class="form-group">
+            <label for="fname">*Isminizi giriniz:</label>
+            <input type="fname" id="fname" class="form-control" required/>
+        </div>
+            <div class="form-group">
+                <label for="sname">*Soyisminizi giriniz:</label>
+                <input type="sname" id="sname" class="form-control" required/>
+            </div>
+            <div class="form-group">
+                <label for="email">*Emailinizi giriniz:</label>
+                <input type="email" id="email" class="form-control" placeholder="name@example.com"required/>
+            </div>
+
+            <div class="form-group">
+                <label for="pass">*Sifrenizi giriniz:</label>
+
+                <input type="password" class="form-control" id="pass" minlength="6"
+                       placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"required/>
+            </div>
+            <div class="form-group">
+                <label for="pass">*Sifrenizi tekrar giriniz:</label>
+
+                <input type="password" class="form-control" id="pass2" minlength="6"
+                       placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"  onkeyup="checkPass();return false;" required/>
+                <div id="error-nwl"></div>
+            </div>
+
+
+
+            <div class="form-group">
+
+                <input type="button" class="fadeIn fourth" onClick="checkRegister()" value="Uye Ol">
+            </div>
+            <div class="form-group">
+
+                <input type="button" class="fadeIn fourth" onClick="location.href='../login/index.html'" value="Anasayfaya Geri Don">
+            </div>
+        </form>
+
+
+</div>
+
+</div>
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+    <div class="container my-auto">
+        <p style="text-align: center"> Copyright &copy; Nilaycezik.github.io
+            <script>document.write(new Date().getFullYear())</script>
+        </p>
+    </div>
+</footer>
+<!-- End of Footer -->
+</body>
+</html>
+
+

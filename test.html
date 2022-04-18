@@ -1,0 +1,61 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script>
+
+        function success(result) {
+            var list="";
+            if(result) {
+                var resultJSON = JSON.parse(result);
+                resultJSON.forEach(element => {
+                    list +=element.id+"&nbsp"+ element.email + "&nbsp" + element.pass+ "&nbsp"+"<br>" ;
+                    list.big();
+                })
+
+                var labelText = document.getElementById("result");
+                labelText.innerHTML = list;
+            }
+        }
+    </script>
+    <script>
+        if(localStorage.getItem("email")==null){
+            window.location.href = './login.html'
+        }
+
+        function checkOut() {
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+
+           localStorage.removeItem("email");
+        } }
+    </script>
+
+</head>
+
+<body>
+<script src="/../page/js/service.js"></script>
+<a href="./login.html"><input type="button" onclick="checkOut()" value="CIKIS YAP"/></a><br>
+
+<button type="button" onclick="get('http://localhost:8080/user',success)">GET TEST</button>
+<br>
+<button type="button" onclick="post('http://localhost:8080/user',{
+'id': 10,
+'email': 'test10@gmail.com',
+'pass': 123
+}, null)">POST TEST</button>
+<br>
+<button type="button" onclick="put('http://localhost:8080/user',{
+'id': 9,
+'email': 'test9@gmail.com',
+'pass': 1235
+},null)">PUT TEST</button>
+<br>
+<button type="button" onclick="del('http://localhost:8080/user',{'id': 9},null)">DELETE TEST</button>
+<br>
+
+<label id="result"></label>
+
+
+</body>
+</html>

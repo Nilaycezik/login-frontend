@@ -1,0 +1,62 @@
+#highlighted {
+  position: relative;
+  background-color: #dc143c;
+}
+#highlighted .container-fluid h1,
+#highlighted .container-fluid p {
+  color: #0000FF;
+}
+#highlighted .container-fluid h1 {
+  font-size: 54px;
+  font-family: Verlag,museo-sans,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #0000FF;
+  font-weight: 300;
+}
+/* general styling */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+form {
+  max-width: 300px;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #ccc;
+  border-radius: .1875rem;
+  box-sizing: border-box;
+  display: block;
+  font-size: .875rem;
+  margin-bottom: 1rem;
+  padding: .275rem;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+     -moz-appearance: checkbox;
+          appearance: checkbox;
+  display: inline-block;
+  width: auto;
+}
+
+input[type="password"] {
+  margin-bottom: .5rem;
+}
+
+input[type="submit"] {
+  background-color: #015294;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+}
+
+label {
+  color: #666;
+  font-size: .875rem;
+}
